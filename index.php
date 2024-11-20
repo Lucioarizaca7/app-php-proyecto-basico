@@ -7,9 +7,12 @@
 </head>
 <body>
       <p> Lucio Arizaca Carrion </p>
+    
 
        <!--etiquetas php -->
        <?php
+
+       
        echo "Inprimiendo en PHP </br>";
 
        $dato_1 = 1;

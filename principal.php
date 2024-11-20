@@ -12,46 +12,69 @@
 
 <body>
 
-<div class="block">
-  
-</div>
-<div class="block">
-<div class="box">
-    <h6>Formulario</h6>
-    <hr>
-    <form method="POST" action="">
-      <label for="numero">Ingresar Numero</label>
-      <input type="number" name="numero" id="numero">
-      <button type="submit">ENVIAR</button>
+  <div class="block">
+
+  </div>
+  <div class="block">
+    <div class="box">
+
+    <h1>PHP BASICO</h1>
+      <ul>
+        <ol>Operadores con String</ol>
+        <ol></ol>
+        <ol></ol>
+        <ol></ol>
+        <ol></ol>
+        <ol></ol>
+        <ol></ol>
+        <ol></ol>
+
+      </ul>
 
 
-    </form>
-
-    <hr>
-    <?php
-    //   Lucio andre arizaca carrion
-
-    if (isset($_GET["fruta"])) {
-      echo $_GET["fruta"] . "</br>";
-    }
+      <h6>Formulario</h6>
+      <hr>
+      <form method="POST" action="">
+        <label for="numero">Ingresar Numero</label>
+        <input type="number" name="numero" id="numero">
+        <button type="submit">ENVIAR</button>
 
 
-    if (isset($_GET["precio"])) {
-      echo $_GET["precio"];
-    }
+      </form>
 
-    echo $_POST["numero"];
+      <hr>
+      <?php
+
+      include "./OperadoresLogicos.php";
+
+      
+      //   Lucio andre arizaca carrion
+
+      if (isset($_GET["fruta"])) {
+        echo $_GET["fruta"] . "</br>";
+      }
 
 
-    ?>
+      if (isset($_GET["precio"])) {
+        echo $_GET["precio"];
+      }
 
+      echo $_POST["numero"];
+
+
+      $ol =new OperadoresLogicos;
+      $ol ->operadores();
+      $ol ->saludar();
+      ?>
+
+
+    </div>
+
+  </div>
+  <div class="block">
 
   </div>
 
-</div>
-<div class="block">
-  
-</div>
 
 
 
@@ -59,7 +82,6 @@
 
 
 
-  
 
 
 
